@@ -1,0 +1,762 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="overflow-x-hidden">
+    <div class="container-fluid m-2">
+        <div class="row">
+            <div class="col-md-4 px-4">
+                <div class="d-flex align-items-center justify-content-around flex-wrap flex-lg-nowrap mb-1">
+                    <div class="w-100 text-center flex-grow-1">
+                        <button class="btn btn-primary py-1 px-2">&larr;</button>
+                        <input type="date" class="w-50 form-control d-inline">
+                        <button class="btn btn-primary py-1  px-2">&rarr;</button>
+                    </div>
+                    <div class="w-100 btn-group flex-grow-1" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger me-2">Submit</button>
+                        <button type="button" class="btn btn-warning">Today</button>
+                        <button type="button" class="btn btn-success ms-2">Refresh</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-secondary me-1 col mb-1">Arrival</button>
+                        <button type="button" class="btn btn-secondary col mb-1">Departure</button>
+                        <button type="button" class="btn btn-secondary ms-1 col mb-1">All</button>
+                        <button type="button" class="btn btn-secondary ms-1 col mb-1">Cancelled</button>
+                        <button type="button" class="btn btn-secondary ms-1 col text-nowrap mb-1">Flight Watch</button>
+                </div>
+                <div class="row mt-2">
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                          </svg></button>
+                        <input type="text" class="form-control">
+                      </div>
+                </div>
+                <div class="row border border-5  rounded mt-2 p-2 ">
+                    <div class="d-flex gap-5 bg-secondary text-capitalize text-white">
+                        <h6>flight detail</h6>
+                        <h6>Friday, 26 March 2023</h6>
+                    </div>
+                    <div class="detail overflow-y-scroll custom-vh">
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" class="w-50">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap w-50 h-100">
+                                                <img src="" class="w-100 h-100 translate">
+                                                <span>E1910</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-1 d-flex align-items-center ">
+                                <i class="fa-solid fa-plane-departure c"></i>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                        <div class="col border-end border-3 pe-1">
+                                            <div class="mb-1 text-nowrap">
+                                                <img src="" alt="">
+                                                <span>E1930</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col text-nowrap">
+                                            <h6><span>HAB</span> <span>-</span> <span>DAB</span></h6>
+                                        </div>
+                                        <div class="col text-nowrap">
+                                            <h6><span class="border-start border-end border-3 px-2">A320</span> <span>E1CVA</span></h6>
+                                        </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-around">
+                                        <p>STL</p>
+                                        <p>09,00</p>
+                                    </div>
+                                    <div class="col d-flex  justify-content-around">
+                                        <p>ATL</p>
+                                        <p>09.00</p>
+                                    </div>
+                                    <div class="col d-flex justify-content-around ">
+                                        <p>DL 93/34/99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!------------------- RIGHT SIDE ----------------->
+
+            <div class="col-md-8 text-white mt-4 mt-md-0 ">
+                <div class="d-flex justify-content-between text-black mb-4 flex-wrap ">
+                    <div class="d-flex gap-sm--4 flex-wrap ">
+                        <div class="d-flex gap-sm-4 flex-wrap text-nowrap gap-3">
+                            <h4>El605</h4>
+                            <p>
+                                <span>EL_DES</span>
+                                <span>&lpar;</span>
+                                <span>A320</span>
+                                <span>&rpar;</span>
+                            </p>
+                            <p>
+                                <span>4C</span>
+                                <span>168Y</span>
+                            </p>
+                        </div>
+                        <div class="d-flex gap-sm-4 flex-wrap flex-sm-nowrap gap-3">
+                            <h6>gate <span>D05</span></h6>
+                            <h6>POS: <span>188</span></h6>
+                        </div>
+                    </div>
+
+                    <div class="btn btn-primary ">dsfsdfsfsf</div>
+                </div>
+                <div class="d-flex flex-wrap flex-md-nowrap  buttons-group mb-3">
+                    <button type="button" class="btn btn-primary ">Primary</button>
+                    <button type="button" class="btn btn-success ">Seco</button>
+                    <button type="button" class="btn btn-success">Suc</button>
+                    <button type="button" class="btn btn-danger">Dan</button>
+                    <button type="button" class="btn btn-warning">Wang</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dar</button>
+                    <button type="button" class="btn btn-primary">mary</button>
+                    <button type="button" class="btn btn-success">ndary</button>
+                    <button type="button" class="btn btn-success">Sss</button>
+                    <button type="button" class="btn btn-danger">Der</button>
+                    <button type="button" class="btn btn-warning">ing</button>
+                    <button type="button" class="btn btn-info">Ino</button>
+                    <button type="button" class="btn btn-light">Lht</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                </div>
+                <div class="container border p-0 mb-4">
+                    <div class="messsage-window chat-vh overflow-auto px-2">
+                        <div class="user-1 d-flex justify-content-start gap-3  my-4">
+                            <figure class="align-self-end m-0 image-container ">
+                                <img src="pngegg.png" class=" img-fluid img-thumbnail object-fit-contain">
+                            </figure>
+                            <div class="bg-info p-2 rounded user-1--msg  ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid, nobis nisi deserunt sequi corporis consectetur non praesentium repudiandae magni asperiores! Aperiam culpa eaque provident impedit optio quae nulla magnam.</p>
+                            </div>
+                        </div>
+                        <div class="user-2 d-flex justify-content-end gap-3 mt-2">
+                            <figure class="order-1 align-self-end m-0 image-container ">
+                                <img src="pngegg.png" class=" img-fluid img-thumbnail object-fit-contain">
+                            </figure>
+                            <div class="bg-body-tertiary text-black-50   p-2 rounded user-2--msg ">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aliquid, nobis nisi deserunt sequi corporis consectetur non praesentium repudiandae magni asperiores! Aperiam culpa eaque provident impedit optio quae nulla magnam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-window d-flex gap-2 p-2 align-items-end ">
+                        <button class="btn btn-primary ">Update Info</button>
+                        <label for="file"  class="btn btn-dark rotated">
+                            <input id="file" type="file" class="file"/>
+                            <span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
+                                <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
+                              </svg></span>
+                        </label>
+                          <textarea placeholder="Type your message here..." type="text" class="flex-fill input-area"></textarea>
+                          <input type="submit" value="send" class="btn btn-primary ">
+                    </div>
+                </div>
+                <div class="container mb-4">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                            <label class="btn btn-light" for="option1">opt 1</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-light" for="option2">opt 2</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                            <label class="btn btn-light" for="option3">opt 3</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                            <label class="btn btn-light" for="option4">opt 4</label>
+                            <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                            <label class="btn btn-light" for="option5">opt 5</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                            <label class="btn btn-light" for="option6">opt 6</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option7" autocomplete="off">
+                            <label class="btn btn-light" for="option7">opt 7</label>
+                            
+                            <input type="radio" class="btn-check" name="options" id="option8" autocomplete="off">
+                            <label class="btn btn-light" for="option8">opt 8</label>
+                        </div>
+                        <div class="col d-flex justify-content-end ">
+                            <button class=" text-nowrap btn btn-primary ">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mb-4 text-black ">
+                    <div class="d-flex gap-2 text-nowrap flex-wrap flex-md-nowrap">
+                        <div class="Operator">
+                            <label for="operator">Airline Operator</label><br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="AC-type">
+                            <label for="operator">A/C Type</label><br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="AC Region">
+                            <label for="operator">A/C REGN</label><br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="flight-no">
+                            <label for="operator">Flight No</label><br>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                        </div>
+                        <div class="date">
+                            <label for="Date">Date</label><br>
+                            <input type="date" name="" id="date" class="form-select">
+                        </div>
+                        <div class="call-sign">
+                            <label for="call-sign">A/C call Sign</label><br>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="gate">
+                            <label for="Gate">Gate</label><br>
+                            <div class="input-group d-flex align-items-center">
+                            <input type="text" class="form-control">
+                            <button class="gate-btn text-white ">+</button>
+
+                            </div>
+                        </div>
+                        <div class="pos">
+                            <label for="pos">POS</label><br>
+                            <div class="input-group d-flex  align-items-center ">
+                            <input type="text" name="" class="form-control">
+                            <button class="pos-btn text-white ">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container bg-warning-subtle text-black ">
+                    <div class="d-flex justify-content-between align-items-end flex-wrap flex-md-nowrap">
+                        <div class="cfg d-flex gap-1 text-center justify-content-between justify-content-md-start w-100 mb-2">
+                            <small class="align-self-end">CFG</small>
+                            <div>
+                                <p>F</p>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <p>J/C</p>
+                                <select>
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                            <div>
+                                <p>W</p>
+                                <input type="text">
+                            </div>
+                            <div>
+                                <p>Y</p>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end justify-content-between justify-content-md-start  w-100 mb-2">
+                            <small >CFGgdgdg</small>
+                            <div class="d-flex w-100">
+                                <input type="text" class="d-flex flex-grow-1 flex-md-grow-0 w-auto ms-2">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end justify-content-md-end text-nowrap">
+                            <small class="me-md-0 me-5">All items secured at gate</small>
+                            <div class="w-15">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-md-end mt-2 mb-3 flex-wrap flex-md-nowrap">
+                        <div class="me-md-2 text-nowrap ">
+                            <label for="ckin">No. of CKIN Desk Used</label>
+                            <input type="text" name="" id="ckin" class="w-25">
+                        </div>
+                        <div class="d-flex align-items-end justify-content-md-end text-nowrap ms-md-5">
+                            <small class="me-md-0 me-5 ">All items secured at CKIN</small>
+                            <div class="w-15">
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 text-nowrap flex-wrap flex-lg-nowrap flex-md-row  flex-sm-column custom-input-width">
+                        <div class=" d-flex justify-content-between w-100 ">
+                            <label for="" class="w-50 me-3">CKIN Opened</label>
+                            <input type="text" class="flex-grow-1 flex-shrink-1">
+                        </div>
+                        <div class=" d-flex justify-content-between w-100">
+                            <label for="" class="w-50 me-3">CKIN Closed</label>
+                            <input type="text"  class="flex-grow-1 flex-shrink-1">
+                        </div>
+                        <div class=" d-flex justify-content-between w-100">
+                            <label for="" class="w-50 me-3">Big Gate open</label>
+                            <input type="text" class="flex-grow-1 flex-shrink-1">
+                        </div>
+                        <div class="d-flex justify-content-between w-100">
+                            <label for="" class="w-50 me-3 ">BGD Started</label>
+                            <input type="text" class="flex-grow-1 flex-shrink-1">
+                        </div>
+                        <div class="d-flex justify-content-between w-100">
+                            <label for="" class="w-50 me-3">BGD Completed</label>
+                            <input type="text"  class="flex-grow-1 flex-shrink-1">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap flex-md-nowrap mt-2 gap-5 ">
+                        <div class="flex-grow-1">
+                            <div class="d-flex text-nowrap mb-2">
+                                <label for="" class="m-2 ">CKIN Staff</label>
+                                <input type="text" name="" id="" class="flex-grow-1">
+                            </div>
+                            <div  class="d-flex mb-2 w-100">
+                                <label for="" class="m-2">Gate Staff</label>
+                                <input type="text" name="" id="" class="flex-grow-1">
+                            </div>
+                        </div>
+                        <div class="flex-grow-1">
+                            <div class="d-flex justify-content-sm-between text-nowrap  mb-2">
+                                <label for="" class="me-5 pe-4 ">SVPR</label>
+                                <input type="text" class=" flex-grow-1 p-1">
+                            </div>
+                            <div class="d-flex text-nowrap mb-2">
+                                <label for="" class="me-4 pe-2">SVPR rmks</label>
+                                <input type="text" class="flex-grow-1 p-1 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-black ">
+                    <div class="wrapper d-flex gap-3 flex-wrap flex-md-nowrap">
+                        <div>
+                            <h6>booked pax</h6>
+                            <div class="d-flex gap-2">
+                                <div class="d-flex flex-column justify-content-end gap-2 text-nowrap ">
+                                    <p>GCM-NAS</p>
+                                    <p>GCM-LHR</p>
+                                    <p>Total</p>
+                                    <p>AVBL</p>
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text" class="bg-primary-subtle"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>booked pax</h6>
+                            <div class="d-flex gap-2">
+                                <div class="d-flex flex-column justify-content-end gap-2 text-nowrap ">
+                                    <p>GCM-NAS</p>
+                                    <p>GCM-LHR</p>
+                                    <p>Total</p>
+                                    <p>AVBL</p>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h6>booked pax</h6>
+                            <div class="d-flex gap-2">
+                                <div class="d-flex flex-column justify-content-end gap-2 text-nowrap ">
+                                    <p>GCM-NAS</p>
+                                    <p>GCM-LHR</p>
+                                    <p>Total</p>
+                                    <p>AVBL</p>
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                                <div class=" d-flex flex-column">
+                                    <p class="text-center">F</p>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    <input type="text"></input>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var imageSrcs = ["pngegg.png","pngegg1.png","pngegg.png","pngegg1.png","pngegg.png","pngegg1.png"];
+        let parentimageEls=document.querySelectorAll("div.mb-1.text-nowrap")
+
+
+
+        parentimageEls.forEach(()=>{
+
+            let imageEls=parentimageEls.querySelectorAll("img")
+            for(i=0;i<imageEls.length;i++){
+                let randomImg=Math.floor( Math.random() * 6)
+                imageEls[i].src=imageSrcs[randomImg]
+                imageEls[i].classList.add("w-50",'translate')
+            }              
+        })
+
+    </script>
+</body>
+</html>
